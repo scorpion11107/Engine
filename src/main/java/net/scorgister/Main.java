@@ -1,3 +1,5 @@
+package net.scorgister;
+
 import net.scorgister.engine.Window;
 
 public class Main {
