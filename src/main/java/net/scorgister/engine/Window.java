@@ -40,11 +40,11 @@ public class Window {
         switch (newScene) {
             case 0:
                 currentScene = new LevelEditorScene();
-                // currentScene.init();
+                currentScene.init();
                 break;
             case 1:
                 currentScene = new LevelScene();
-                // currentScene.init();
+                currentScene.init();
                 break;
             default:
                 assert false : "Unknown scene '" + newScene + "'";
@@ -62,8 +62,6 @@ public class Window {
     }
 
     public void run() {
-
-        System.out.println("Hello LWJGL " + Version.getVersion() + "!");
 
         init();
         loop();
